@@ -3,6 +3,7 @@ module.exports={
 title:'测试文档',
 description:'测试1',
 theme: 'reco',
+base: '/fy-blog/',
 //语言
 locales: {
     '/': {
