@@ -9,11 +9,14 @@ npm run docs:build
 # 进入生成的文件夹
 cd docs/.vuepress/dist
 
+# 拷贝目录和文件
+cp -r ../../../.github ./
+
 git init
 git add -A
 git commit -m 'deploy'
 
-# 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com/fy11/fy-blog master:gh-pages
+# 同步两个仓库
+git push -f git@github.com:fy11/fy-blog.git master:gh-pages
 
 cd -
